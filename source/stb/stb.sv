@@ -34,12 +34,14 @@ module stb (
 `ifndef ZEBU
   always  #1  clk0 = ~clk0;
 //`else
+// Instantiate the ZeBu clock generator (zceiClockPort)
 `endif
  
   // Clock generator for clk1
 `ifndef ZEBU
   always  #1  clk1 = ~clk1;
 //`else
+// Instantiate the ZeBu clock generator (zceiClockPort)
 `endif
 
 
