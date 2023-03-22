@@ -1,0 +1,65 @@
+________________________________________________________________________________
+
+                                    ZeBu (R)
+                          ZeBu Compiler User Interface
+
+              Version Q-2020.03-SP1-4 for linux64 - Oct 18, 2022 
+
+                    Copyright (c) 2002 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+# Build Date : Oct 18 2022 - 00:41:38
+
+#   Project filename: /home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/utf_generatefiles/gen_ufe_project.zpf
+
+#   21/03/23  19:40:28 - Re-Compute Task Graph Node Rows
+#   21/03/23  19:40:28 - Netlist_Analyzer added
+#   21/03/23  19:40:28 - Netlist_Checker added
+#   21/03/23  19:40:28 - Re-Compute Task Graph Node Rows
+#   21/03/23  19:40:28 - Netlist_Analyzer spawned 
+#   21/03/23  19:40:28 - design_FrontendEntry added
+#   21/03/23  19:40:28 - design_Netlist_Builder added
+#   21/03/23  19:40:28 - vcs_splitter_VCS_Task_Builder added
+#   21/03/23  19:40:28 - Post_Vcs_Task_Builder added
+#   21/03/23  19:40:28 - VCS_Task_Analyzer added
+#   21/03/23  19:40:28 - Re-Compute Task Graph Node Rows
+#   21/03/23  19:40:28 - Netlist_Analyzer normal task termination
+#   21/03/23  19:40:28 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer added
+#   21/03/23  19:40:28 - Target_Config added
+#   21/03/23  19:40:28 - Target_Config_Analyzer added
+#   21/03/23  19:40:28 - design_Fs_Macro_Script_Builder added
+#   21/03/23  19:40:28 - design_Fs_Macro added
+#   21/03/23  19:40:28 - Vcs_Version_Checker added
+#   21/03/23  19:40:28 - FE_Version_Checker added
+#   21/03/23  19:40:28 - Re-Compute Task Graph Node Rows
+#   21/03/23  19:40:30 - FE_Version_Checker spawned (queue ZebuLocal, 1 used) 
+#   21/03/23  19:40:30 - FE_Version_Checker info : Pid: 40395
+#   21/03/23  19:40:30 - Vcs_Version_Checker spawned (queue ZebuLocal, 2 used) 
+#   21/03/23  19:40:30 - Vcs_Version_Checker info : Pid: 40396
+#   21/03/23  19:40:32 - FE_Version_Checker normal task termination
+#   21/03/23  19:40:32 - Vcs_Version_Checker normal task termination
+#   21/03/23  19:40:32 - Target_Config spawned (queue Zebu, 1 used) 
+#   21/03/23  19:40:32 - Target_Config info : Pid: 40517
+### 21/03/23  19:40:34 - Target_Config abnormal task termination: Return status 1
+#   21/03/23  19:40:34 - Compilation Ended abnormally
+#   Network File System Parameters : Optimizer Method = 5 ; Number Of Retries = 120 ; Retry Delay = 1000
+#   Network File System Stats : Number of Optimizer Attempts = 0 ; Number Of Optimizer Failures = 0
+#   Network File System Stats : Number of Retry Cycles = 0 ; Number Of Failures = 0 ; Average Number of Retries = 0 ; Maximum Number Of Retries = 0
+#   Edif Check : Nb Of Checks 0; Nb Of Passed Checks 0; Nb Of Failed Checks 0; Nb Of Check Calls 0
+
+List of failed tasks:
+Name: Target Configuration
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/log/Target_Config.log

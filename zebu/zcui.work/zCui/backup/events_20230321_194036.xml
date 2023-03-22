@@ -1,0 +1,206 @@
+<compilation>
+ <events med="0" cid="ZMON" min="1" maj="0">
+  <Event timeStamp="1679445628" className="ClearAllEvent"/>
+  <Event toolTipText="" timeStamp="1679445628" total="100" className="UpdateProgressBarEvent">
+   <values>
+    <item v_0="0" v_1="0"/>
+   </values>
+  </Event>
+  <Event timeStamp="1679445628" quiet="0" className="ChangeRowsEvent">
+   <newRowsVector/>
+  </Event>
+  <Event hierarchy="HEADER_1[Initial Check]" taskName="Netlist_Analyzer" row="0" taskType="0" taskDir="" timeStamp="1679445628" label="Make Global Netlist Tasks" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_5[Final Check]" taskName="Netlist_Checker" row="1" taskType="0" taskDir="" timeStamp="1679445628" label="Check Netlist Completion" className="AddTaskEvent"/>
+  <Event timeStamp="1679445628" quiet="0" className="ChangeRowsEvent">
+   <newRowsVector/>
+  </Event>
+  <Event version="0" projectFilename="src/project.utf" timeStamp="1679445628" windowTitle="" workingDirectory="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work" className="CompilationDataEvent">
+   <backendNames>
+    <item v=""/>
+   </backendNames>
+  </Event>
+  <Event taskName="Netlist_Analyzer" success="1" comment="" timeStamp="1679445628" queue="" className="RunTaskEvent"/>
+  <Event timeStamp="1679445628" quiet="1" className="ChangeRowsEvent">
+   <newRowsVector>
+    <item v_0="Netlist_Checker" v_1="4"/>
+   </newRowsVector>
+  </Event>
+  <Event hierarchy="HEADER_2[Design]|G[Edif Merger]" taskName="design_FrontendEntry" row="3" taskType="0" taskDir="" timeStamp="1679445628" label="Prepare Frontend Completion" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_2[Design]|G[Edif Merger]" taskName="design_Netlist_Builder" row="4" taskType="1" taskDir="" timeStamp="1679445628" label="Make Netlist" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[VCS]" taskName="vcs_splitter_VCS_Task_Builder" row="1" taskType="1" taskDir="" timeStamp="1679445628" label="Launch VCS" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[VCS]" taskName="Post_Vcs_Task_Builder" row="2" taskType="0" taskDir="" timeStamp="1679445628" label="Prepare Post Vcs Tasks" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[VCS]" taskName="VCS_Task_Analyzer" row="2" taskType="0" taskDir="" timeStamp="1679445628" label="Analyze VCS Results" className="AddTaskEvent"/>
+  <Event timeStamp="1679445628" quiet="0" className="ChangeRowsEvent">
+   <newRowsVector/>
+  </Event>
+  <Event taskName="Netlist_Analyzer" taskStatus="1" eventType="0" comment="" timeStamp="1679445628" className="TaskFinishEvent"/>
+  <Event timeStamp="1679445628" quiet="1" className="ChangeRowsEvent">
+   <newRowsVector>
+    <item v_0="vcs_splitter_VCS_Task_Builder" v_1="6"/>
+    <item v_0="VCS_Task_Analyzer" v_1="7"/>
+    <item v_0="Post_Vcs_Task_Builder" v_1="7"/>
+    <item v_0="design_FrontendEntry" v_1="9"/>
+    <item v_0="Netlist_Checker" v_1="10"/>
+    <item v_0="design_Netlist_Builder" v_1="10"/>
+   </newRowsVector>
+  </Event>
+  <Event hierarchy="HEADER_5[Final Check]" taskName="backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer" row="8" taskType="1" taskDir="" timeStamp="1679445628" label="Compilation Profiler (after VCSAnalyzer)" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[Initial Check]|G[Target Configuration]" taskName="Target_Config" row="2" taskType="1" taskDir="" timeStamp="1679445628" label="Target Configuration" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[Initial Check]|G[Target Configuration]" taskName="Target_Config_Analyzer" row="3" taskType="0" taskDir="" timeStamp="1679445628" label="Analyze Target Configuration Results" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_2[Design]|G[Build Fs Macro]" taskName="design_Fs_Macro_Script_Builder" row="4" taskType="0" taskDir="" timeStamp="1679445628" label="Build Fs Macro Script" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_2[Design]|G[Build Fs Macro]" taskName="design_Fs_Macro" row="5" taskType="1" taskDir="" timeStamp="1679445628" label="Build Fs Macro Library" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[Initial Check]" taskName="Vcs_Version_Checker" row="1" taskType="1" taskDir="" timeStamp="1679445628" label="Check Vcs Binaries Version" className="AddTaskEvent"/>
+  <Event hierarchy="HEADER_1[Initial Check]" taskName="FE_Version_Checker" row="1" taskType="1" taskDir="" timeStamp="1679445628" label="Check Front-End Binaries Version" className="AddTaskEvent"/>
+  <Event timeStamp="1679445628" quiet="0" className="ChangeRowsEvent">
+   <newRowsVector/>
+  </Event>
+  <Event taskName="FE_Version_Checker" success="1" comment="Pid: 40395" timeStamp="1679445630" queue="queue ZebuLocal, 1 used" className="RunTaskEvent"/>
+  <Event taskName="Vcs_Version_Checker" success="1" comment="Pid: 40396" timeStamp="1679445630" queue="queue ZebuLocal, 2 used" className="RunTaskEvent"/>
+  <Event taskName="FE_Version_Checker" taskStatus="1" eventType="0" comment="" timeStamp="1679445632" className="TaskFinishEvent"/>
+  <Event taskName="Vcs_Version_Checker" taskStatus="1" eventType="0" comment="" timeStamp="1679445632" className="TaskFinishEvent"/>
+  <Event taskName="Target_Config" success="1" comment="Pid: 40517" timeStamp="1679445632" queue="queue Zebu, 1 used" className="RunTaskEvent"/>
+  <Event taskName="Target_Config" taskStatus="0" eventType="1" comment="Return status 1" timeStamp="1679445634" className="TaskFinishEvent"/>
+  <Event toolTipText="Target Configuration" timeStamp="1679445634" total="100" className="UpdateProgressBarEvent">
+   <values>
+    <item v_0="0" v_1="2"/>
+   </values>
+  </Event>
+  <Event success="0" timeStamp="1679445634" className="CompilationFinishEvent"/>
+ </events>
+ <actions>
+  <FE_Version_Checker synthName="" taskName="FE_Version_Checker" className="SendActionMessage">
+   <actionList>
+    <item v_0="Show Log in Place">
+     <v_1>
+      <item v="plaintext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/log/FE_Version_Checker.log"/>
+      <item v="Check Front-End Binaries Version"/>
+      <item v="FE_Version_Checker"/>
+     </v_1>
+    </item>
+    <item v_0="Show Log in Window">
+     <v_1>
+      <item v="showlog"/>
+      <item v="FE_Version_Checker"/>
+     </v_1>
+    </item>
+    <item v_0="Tell Why">
+     <v_1>
+      <item v="whytext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/why/FE_Version_Checker.why"/>
+      <item v="Check Front-End Binaries Version"/>
+      <item v="FE_Version_Checker"/>
+     </v_1>
+    </item>
+   </actionList>
+  </FE_Version_Checker>
+  <Netlist_Analyzer synthName="" taskName="Netlist_Analyzer" className="SendActionMessage">
+   <actionList>
+    <item v_0="Show Log in Place">
+     <v_1>
+      <item v="plaintext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/log/Netlist_Analyzer.log"/>
+      <item v="Make Global Netlist Tasks"/>
+      <item v="Netlist_Analyzer"/>
+     </v_1>
+    </item>
+    <item v_0="Show Log in Window">
+     <v_1>
+      <item v="showlog"/>
+      <item v="Netlist_Analyzer"/>
+     </v_1>
+    </item>
+    <item v_0="Show Dependencies">
+     <v_1>
+      <item v="whytext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/why/Netlist_Analyzer.why"/>
+      <item v="Make Global Netlist Tasks"/>
+      <item v="Netlist_Analyzer"/>
+     </v_1>
+    </item>
+   </actionList>
+  </Netlist_Analyzer>
+  <Netlist_Checker synthName="" taskName="Netlist_Checker" className="SendActionMessage">
+   <actionList/>
+  </Netlist_Checker>
+  <Post_Vcs_Task_Builder synthName="" taskName="Post_Vcs_Task_Builder" className="SendActionMessage">
+   <actionList/>
+  </Post_Vcs_Task_Builder>
+  <Target_Config synthName="" taskName="Target_Config" className="SendActionMessage">
+   <actionList>
+    <item v_0="Show Log in Place">
+     <v_1>
+      <item v="plaintext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/log/Target_Config.log"/>
+      <item v="Target Configuration"/>
+      <item v="Target_Config"/>
+     </v_1>
+    </item>
+    <item v_0="Show Log in Window">
+     <v_1>
+      <item v="showlog"/>
+      <item v="Target_Config"/>
+     </v_1>
+    </item>
+    <item v_0="Tell Why">
+     <v_1>
+      <item v="whytext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/why/Target_Config.why"/>
+      <item v="Target Configuration"/>
+      <item v="Target_Config"/>
+     </v_1>
+    </item>
+   </actionList>
+  </Target_Config>
+  <Target_Config_Analyzer synthName="" taskName="Target_Config_Analyzer" className="SendActionMessage">
+   <actionList/>
+  </Target_Config_Analyzer>
+  <VCS_Task_Analyzer synthName="" taskName="VCS_Task_Analyzer" className="SendActionMessage">
+   <actionList/>
+  </VCS_Task_Analyzer>
+  <Vcs_Version_Checker synthName="" taskName="Vcs_Version_Checker" className="SendActionMessage">
+   <actionList>
+    <item v_0="Show Log in Place">
+     <v_1>
+      <item v="plaintext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/log/Vcs_Version_Checker.log"/>
+      <item v="Check Vcs Binaries Version"/>
+      <item v="Vcs_Version_Checker"/>
+     </v_1>
+    </item>
+    <item v_0="Show Log in Window">
+     <v_1>
+      <item v="showlog"/>
+      <item v="Vcs_Version_Checker"/>
+     </v_1>
+    </item>
+    <item v_0="Tell Why">
+     <v_1>
+      <item v="whytext"/>
+      <item v="/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab/zebu/zcui.work/zCui/why/Vcs_Version_Checker.why"/>
+      <item v="Check Vcs Binaries Version"/>
+      <item v="Vcs_Version_Checker"/>
+     </v_1>
+    </item>
+   </actionList>
+  </Vcs_Version_Checker>
+  <backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer synthName="" taskName="backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer" className="SendActionMessage">
+   <actionList/>
+  </backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer>
+  <design_FrontendEntry synthName="" taskName="design_FrontendEntry" className="SendActionMessage">
+   <actionList/>
+  </design_FrontendEntry>
+  <design_Fs_Macro synthName="" taskName="design_Fs_Macro" className="SendActionMessage">
+   <actionList/>
+  </design_Fs_Macro>
+  <design_Fs_Macro_Script_Builder synthName="" taskName="design_Fs_Macro_Script_Builder" className="SendActionMessage">
+   <actionList/>
+  </design_Fs_Macro_Script_Builder>
+  <design_Netlist_Builder synthName="" taskName="design_Netlist_Builder" className="SendActionMessage">
+   <actionList/>
+  </design_Netlist_Builder>
+  <vcs_splitter_VCS_Task_Builder synthName="" taskName="vcs_splitter_VCS_Task_Builder" className="SendActionMessage">
+   <actionList/>
+  </vcs_splitter_VCS_Task_Builder>
+ </actions>
+</compilation>

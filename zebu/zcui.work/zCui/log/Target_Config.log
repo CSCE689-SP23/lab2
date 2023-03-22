@@ -1,0 +1,49 @@
+
+                                    ZeBu (R)
+                                  zTargetTools
+
+              Version Q-2020.03-SP1-4 for linux64 - Oct 18, 2022 
+
+                    Copyright (c) 2002 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+# zTargetTools zTargetTools.tcl 
+
+# start time is Tue Mar 21 19:40:32 2023
+
+
+
+
+# Build Date : Oct 18 2022 - 01:00:11
+# ---------------------------System Context--------------------------- 
+# Cpu        40 x bogomips - 4604.08 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+#            Load: 0.00 0.01 0.05 2/542 40521
+#            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.83.1.el7.x86_64
+# Memory     Total: 193183 MB Free: 70695 MB
+#            Total Free including cache: 186487 MB
+#            Swap cache: 0 MB Cached space: 115792 MB
+#            Swap space: 4095 MB Free Swap space: 4095 MB
+#            VmSize: 62 MB VmPeak: 62 MB
+# Disk Space Total: 250 GB Available: 245 GB Used: 5 GB
+#            Free inodes: 524271269
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            8388608              unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+### fatal error in zTargetTools [ZTT0010F] : Error in given target filename ..
+Error in given target filename ..
+command exit code is '1'

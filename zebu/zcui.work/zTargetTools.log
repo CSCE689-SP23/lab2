@@ -1,0 +1,147 @@
+
+                                    ZeBu (R)
+                                  zTargetTools
+
+              Version Q-2020.03-SP1-4 for linux64 - Oct 18, 2022 
+
+                    Copyright (c) 2002 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+# zTargetTools zTargetTools.tcl 
+
+# start time is Tue Mar 21 19:40:32 2023
+
+
+
+
+# Build Date : Oct 18 2022 - 01:00:11
+# ---------------------------System Context--------------------------- 
+# Cpu        40 x bogomips - 4604.08 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+#            Load: 0.00 0.01 0.05 2/542 40521
+#            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.83.1.el7.x86_64
+# Memory     Total: 193183 MB Free: 70695 MB
+#            Total Free including cache: 186487 MB
+#            Swap cache: 0 MB Cached space: 115792 MB
+#            Swap space: 4095 MB Free Swap space: 4095 MB
+#            VmSize: 62 MB VmPeak: 62 MB
+# Disk Space Total: 250 GB Available: 245 GB Used: 5 GB
+#            Free inodes: 524271269
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            8388608              unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+#   step ENV.VAR : LM_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu
+#   step ENV.VAR : SNPSLMD_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu
+#   step ENV.VAR : VCS_HOME=/opt/coe/synopsys/vcs/Q-2020.03-SP2-12
+#   step ENV.VAR : VERDI_HOME=/opt/coe/synopsys/verdi/Q-2020.03-SP2-12
+#   step ENV.VAR : ZEBU_AURA_FW_HOME=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/aura/fw
+#   step ENV.VAR : ZEBU_AURA_SW_HOME=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/aura/sw
+#   step ENV.VAR : ZEBU_DRIVER_PATH=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/drivers
+#   step ENV.VAR : ZEBU_ROOT=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4
+#   step ENV.VAR : ZEBU_TRITON_ZS2=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/triton_zs2
+#   step ENV.VAR : ZEBU_TRITON_ZS3=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/triton_zs3
+#   step ENV.VAR : ZEBU_XIL=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/ise/ISE_DS
+#   step ENV.VAR : ZEBU_XIL_VIVADO=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/vivado/
+#   step ENV.VAR : ZEBU_XIL_VIVADO_P2=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/vivado_p2/
+#   step ENV.VAR : ZEBU_XIL_VIVADO_P3=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/vivado_p3/ids_lite
+#   step ENV.VAR : ZEBU_XIL_VIVADO_P4=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/vivado_p4/
+set_backend_target {default} {..} {1}
+set_filling_rate {virtex5} {low} {reg=50} {lut=47} {bram=70} {dsp=40} {ramlut=40} {fwc=40} {qiwc=100}
+set_filling_rate {virtex5} {default} {reg=55} {lut=52} {bram=80} {dsp=50} {ramlut=40} {fwc=63} {qiwc=100}
+set_filling_rate {virtex5} {high} {reg=65} {lut=57} {bram=90} {dsp=90} {ramlut=70} {fwc=94} {qiwc=100}
+set_filling_rate {virtex5} {gtl_low} {reg=60} {lut=57} {bram=70} {dsp=40} {ramlut=40} {fwc=40} {qiwc=100}
+set_filling_rate {virtex5} {gtl_default} {reg=65} {lut=62} {bram=80} {dsp=50} {ramlut=40} {fwc=63} {qiwc=100}
+set_filling_rate {virtex5} {gtl_high} {reg=75} {lut=67} {bram=90} {dsp=90} {ramlut=70} {fwc=94} {qiwc=100}
+set_filling_rate {virtex6} {low} {reg=15} {lut=40} {bram=70} {dsp=40} {ramlut=40} {fwc=20} {qiwc=100}
+set_filling_rate {virtex6} {default} {reg=22} {lut=50} {bram=80} {dsp=50} {ramlut=40} {fwc=31} {qiwc=100}
+set_filling_rate {virtex6} {high} {reg=23} {lut=55} {bram=90} {dsp=90} {ramlut=55} {fwc=47} {qiwc=100}
+set_filling_rate {virtex6} {gtl_low} {reg=25} {lut=50} {bram=70} {dsp=40} {ramlut=40} {fwc=20} {qiwc=100}
+set_filling_rate {virtex6} {gtl_default} {reg=32} {lut=60} {bram=80} {dsp=50} {ramlut=40} {fwc=31} {qiwc=100}
+set_filling_rate {virtex6} {gtl_high} {reg=33} {lut=65} {bram=90} {dsp=90} {ramlut=55} {fwc=47} {qiwc=100}
+set_filling_rate {virtex7} {low} {reg=15} {lut=40} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {virtex7} {default} {reg=22} {lut=50} {bram=50} {dsp=50} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {virtex7} {high} {reg=30} {lut=55} {bram=90} {dsp=90} {ramlut=55} {fwc=25} {qiwc=50}
+set_filling_rate {virtex7} {gtl_low} {reg=25} {lut=50} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {virtex7} {gtl_default} {reg=32} {lut=60} {bram=50} {dsp=50} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {virtex7} {gtl_high} {reg=40} {lut=65} {bram=90} {dsp=90} {ramlut=55} {fwc=25} {qiwc=50}
+set_filling_rate {virtex8} {low} {reg=15} {lut=40} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {virtex8} {default} {reg=22} {lut=50} {bram=60} {dsp=60} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {virtex8} {high} {reg=30} {lut=55} {bram=90} {dsp=90} {ramlut=55} {fwc=25} {qiwc=50}
+set_filling_rate {virtex8} {gtl_low} {reg=25} {lut=50} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {virtex8} {gtl_default} {reg=32} {lut=60} {bram=60} {dsp=60} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {virtex8} {gtl_high} {reg=40} {lut=65} {bram=90} {dsp=90} {ramlut=55} {fwc=25} {qiwc=50}
+set_filling_rate {vu19p} {low} {reg=15} {lut=40} {bram=50} {uram=30} {dsp=40} {ramlut=40} {fwc=15} {qiwc=50}
+set_filling_rate {vu19p} {default} {reg=22} {lut=50} {bram=60} {uram=40} {dsp=60} {ramlut=40} {fwc=30} {qiwc=60}
+set_filling_rate {vu19p} {high} {reg=30} {lut=55} {bram=90} {uram=60} {dsp=90} {ramlut=55} {fwc=35} {qiwc=70}
+set_filling_rate {vu19p} {gtl_low} {reg=25} {lut=50} {bram=50} {uram=30} {dsp=40} {ramlut=40} {fwc=15} {qiwc=50}
+set_filling_rate {vu19p} {gtl_default} {reg=32} {lut=60} {bram=60} {uram=40} {dsp=60} {ramlut=40} {fwc=30} {qiwc=60}
+set_filling_rate {vu19p} {gtl_high} {reg=40} {lut=65} {bram=90} {uram=60} {dsp=90} {ramlut=55} {fwc=35} {qiwc=70}
+set_filling_rate {stratix10} {low} {reg=15} {lut=40} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {stratix10} {default} {reg=22} {lut=50} {bram=60} {dsp=60} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {stratix10} {high} {reg=30} {lut=55} {bram=95} {dsp=95} {ramlut=55} {fwc=25} {qiwc=50}
+set_filling_rate {stratix10} {gtl_low} {reg=25} {lut=50} {bram=50} {dsp=40} {ramlut=40} {fwc=10} {qiwc=30}
+set_filling_rate {stratix10} {gtl_default} {reg=32} {lut=60} {bram=60} {dsp=60} {ramlut=40} {fwc=18} {qiwc=40}
+set_filling_rate {stratix10} {gtl_high} {reg=40} {lut=65} {bram=95} {dsp=95} {ramlut=55} {fwc=25} {qiwc=50}
+set_disk_space {virtex5} -ctype {cstg} {302}
+set_disk_space {virtex6} -ctype {cstg} {302}
+set_disk_space {virtex7} -ctype {cstg} {302}
+set_disk_space {virtex8} -ctype {cstg} {302}
+set_disk_space {vu19p} -ctype {cstg} {302}
+set_disk_space {stratix10} -ctype {cstg} {302}
+set_disk_space {virtex5} -ctype {csts} {1.04}
+set_disk_space {virtex6} -ctype {csts} {1.04}
+set_disk_space {virtex7} -ctype {csts} {1.04}
+set_disk_space {virtex8} -ctype {csts} {1.04}
+set_disk_space {vu19p} -ctype {csts} {1.04}
+set_disk_space {stratix10} -ctype {csts} {1.04}
+set_disk_space {virtex5} -ctype {cstb} {229}
+set_disk_space {virtex6} -ctype {cstb} {229}
+set_disk_space {virtex7} -ctype {cstb} {229}
+set_disk_space {virtex8} -ctype {cstb} {229}
+set_disk_space {vu19p} -ctype {cstb} {229}
+set_disk_space {stratix10} -ctype {cstb} {229}
+set_disk_space {virtex5} -ctype {cstc} {164}
+set_disk_space {virtex6} -ctype {cstc} {164}
+set_disk_space {virtex7} -ctype {cstc} {164}
+set_disk_space {virtex8} -ctype {cstc} {164}
+set_disk_space {vu19p} -ctype {cstc} {164}
+set_disk_space {stratix10} -ctype {cstc} {164}
+set_disk_space {virtex5} -ctype {cstx} {156.7}
+set_disk_space {virtex6} -ctype {cstx} {156.7}
+set_disk_space {virtex7} -ctype {cstx} {156.7}
+set_disk_space {virtex8} -ctype {cstx} {156.7}
+set_disk_space {vu19p} -ctype {cstx} {156.7}
+set_disk_space {stratix10} -ctype {cstx} {156.7}
+set_disk_space {virtex5} -ctype {cste} {400}
+set_disk_space {virtex6} -ctype {cste} {400}
+set_disk_space {virtex7} -ctype {cste} {400}
+set_disk_space {virtex8} -ctype {cste} {400}
+set_disk_space {vu19p} -ctype {cste} {400}
+set_disk_space {stratix10} -ctype {cste} {400}
+set_disk_space {virtex5} -ctype {cstv} {517}
+set_disk_space {virtex6} -ctype {cstv} {517}
+set_disk_space {virtex7} -ctype {cstv} {517}
+set_disk_space {virtex8} -ctype {cstv} {517}
+set_disk_space {vu19p} -ctype {cstv} {517}
+set_disk_space {stratix10} -ctype {cstv} {517}
+set_resource_max {virtex5} {bram=172} {ramlut=5184}
+set_resource_max {virtex6} {bram=359} {ramlut=13248}
+set_resource_max {virtex7} {bram=645} {ramlut=34480}
+set_resource_max {virtex8} {bram=645} {ramlut=34480}
+set_resource_max {vu19p} {bram=540} {ramlut=34480} {uram=80}
+set_resource_max {stratix10} {bram=645} {ramlut=34480}
+### fatal error in zTargetTools [ZTT0010F] : Error in given target filename ..

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfproject major="1" minor="0" type="UC1">
+    <sourcepath>src/project.utf</sourcepath>
+    <commands>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="26">
+            <name>coverage</name>
+            <options>
+                <option name="-auto_bin_max" type="int">64</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="23">
+            <name>eco</name>
+            <options>
+                <option name="-enable" type="bool">f</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="23">
+            <name>eco</name>
+            <options>
+                <option name="-reserve_force" type="int">32</option>
+                <option name="-reserve_fwc" type="int">1152</option>
+                <option name="-reserve_monitor" type="int">0</option>
+                <option name="-reserve_qiwc" type="int">2048</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf" line="7">
+            <name>fpga</name>
+            <options>
+                <option name="-inter_die_tdm" type="bool">f</option>
+                <option name="-inter_die_tdm_params" type="multilist">
+                    <suboption name="strategy" type="enum">Pdm_Direct</suboption>
+                </option>
+                <option name="-parff" type="enum">t</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="12">
+            <name>grid_cmd</name>
+            <options>
+                <option name="-njobs" type="int">1</option>
+                <option name="-queue" type="string">DEFAULT_QUEUE</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="12">
+            <name>grid_cmd</name>
+            <options>
+                <option name="-njobs" type="int">0</option>
+                <option name="-queue" type="string">Zebu</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="12">
+            <name>grid_cmd</name>
+            <options>
+                <option name="-njobs" type="int">20</option>
+                <option name="-queue" type="string">ZebuIse</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="12">
+            <name>grid_cmd</name>
+            <options>
+                <option name="-njobs" type="int">7</option>
+                <option name="-queue" type="string">ZebuSynthesis</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="32">
+            <name>memories</name>
+            <options>
+                <option name="-zrm_latency_encoding" type="enum">ONEHOT</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf" line="6">
+            <name>nfs_settings</name>
+            <options>
+                <option name="-access_level" type="enum">5</option>
+                <option name="-delay" type="int">1000</option>
+                <option name="-max_retries" type="int">120</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf" line="46">
+            <name>set_perf_flow</name>
+            <options>
+                <option name="-patch" type="string">2020.03-2</option>
+                <option name="-patch_list" type="list">
+                    <element>2020.03</element>
+                    <element>2020.03-1</element>
+                    <element>2020.03-2</element>
+                    <element>2020.03-LCA</element>
+                    <element>2020.03-SP1-1-LCA</element>
+                </option>
+                <option name="mode" type="string">flow1</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf" line="10">
+            <name>timing_analysis</name>
+            <options>
+                <option name="-advanced_async_set_reset_analysis" type="bool">f</option>
+                <option name="-delay_min_zfilter_skew" type="int">40000</option>
+                <option name="-post_fpga" type="enum">BACK_ANNOTATED</option>
+                <option name="-pre_fpga" type="enum">CONSTANTS_BASE_DELAY_MODEL</option>
+                <option name="-use_hdl_names" type="bool">f</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/utf/default_commands.tcl" line="20">
+            <name>zpar</name>
+            <options>
+                <option name="-effort" type="enum">Medium</option>
+            </options>
+        </command>
+        <command file="/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf" line="11">
+            <name>ztopbuild</name>
+            <options>
+                <option name="-advanced_command" type="string">enable advanced_incremental_mode</option>
+            </options>
+        </command>
+    </commands>
+</utfproject>
