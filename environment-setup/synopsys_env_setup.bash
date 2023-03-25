@@ -1,9 +1,6 @@
 #!/bin/bash
-
-#export SNPSLMD_LICENSE_FILE=27070@csce-quinn-s1.engr.tamu.edu
-#export LM_LICENSE_FILE=27070@csce-quinn-s1.engr.tamu.edu
-export SNPSLMD_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu
-export LM_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu
+export SNPSLMD_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu:2100@csce-quinn-s1.engr.tamu.edu
+export LM_LICENSE_FILE=27070@coe-vtls3.engr.tamu.edu:27020@csce-quinn-s1.engr.tamu.edu:2100@csce-quinn-s1.engr.tamu.edu
 
 export VCS_HOME=/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/
 export VERDI_HOME=/opt/coe/synopsys/verdi/Q-2020.03-SP2-12/
